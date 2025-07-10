@@ -1,111 +1,77 @@
-Absolutely! Here's a well-structured and professional **`README.md`** file for your GitHub repo titled:
-
-> **ARIMA-Driven Predictive Analytics for E-Commerce: Customer Churn Prediction and Grouping**
-
-It includes sections for Overview, Features, Tech Stack, Setup, Results, and Credits — suitable for recruiters, contributors, and technical readers.
-
----
-
-### ✅ `README.md` Content
-
-```markdown
 # ARIMA-Driven Predictive Analytics for E-Commerce: Customer Churn Prediction and Grouping
 
-## 📌 Overview
-In the competitive e-commerce industry, customer retention is key to growth. This project combines **RFM (Recency, Frequency, Monetary)** customer segmentation with **ARIMA** time series forecasting to predict customer churn. The aim is to identify high-risk customers in advance and support data-driven retention strategies.
+## Overview
+In this project, we aimed to address the challenge of customer churn in the e-commerce domain by using predictive analytics. We combined **RFM segmentation** (Recency, Frequency, Monetary) with the **ARIMA** time series model to identify patterns in customer behavior and forecast churn trends.
 
-We grouped customers into behavioral segments and applied ARIMA to forecast future engagement, allowing businesses to detect churn trends and act early.
+The goal was to help businesses identify at-risk customers early and improve retention strategies based on data-driven insights.
 
-## 🔍 Problem Statement
-E-commerce platforms suffer from high customer churn due to inconsistent engagement. Without predictive insight into churn behavior, businesses cannot design effective retention efforts. This project addresses that by:
-- Segmenting customers using RFM analysis
-- Forecasting churn patterns using ARIMA
-- Enabling proactive retention planning
+## Problem Statement
+E-commerce platforms often face difficulty in retaining customers due to inconsistent engagement. A lack of early insight into churn behavior leads to missed opportunities for retention. Our solution focuses on segmenting users and forecasting churn to enable targeted marketing and personalized interventions.
 
-## 🚀 Features
-- RFM-based customer segmentation
-- ARIMA modeling for time series churn forecasting
-- Flask dashboard to visualize trends and forecasts
-- Evaluation using RMSE and MAE metrics
-- Real-world business insights for retention teams
+## Key Features
+- Segmented customers using RFM analysis based on transactional data
+- Applied ARIMA for churn forecasting within each segment
+- Built a simple Flask dashboard to visualize churn trends
+- Evaluated model performance using RMSE and MAE
 
-## 🛠️ Tech Stack
-- **Python**
-- **Pandas**, **NumPy** — Data manipulation
-- **ARIMA (Statsmodels)** — Time series modeling
-- **Flask** — Lightweight web app framework
-- **Matplotlib**, **Seaborn** — Data visualization
-- **Jupyter Notebook** — Exploratory analysis
+## Technologies Used
+- Python
+- Pandas, NumPy
+- RFM
+- Statsmodels (ARIMA)
+- Flask
+- Matplotlib, Seaborn
+- Jupyter Notebook
 
-## 📊 Results
-- ARIMA effectively captured seasonal churn patterns
-- RMSE: `0.0267`
-- MAE: `0.0213`
-- Identified at-risk customer groups with interpretable visualizations
+## Dataset
+We used a time-stamped customer transaction dataset from an e-commerce setting. The dataset includes user IDs, transaction amounts, and dates — which we used for RFM feature extraction and time series modeling.
 
-## 📁 Project Structure
-```
+## Results
+- ARIMA captured churn trends effectively in the Seasonal Buyers segment
+- RMSE: 0.0267
+- MAE: 0.0213
+- Enabled early detection of churn risk and segmentation-based targeting
 
-├── data/                  # Input dataset (CSV)
-├── notebooks/             # Jupyter notebooks for EDA, modeling
-├── app/                   # Flask dashboard code
-├── models/                # Trained ARIMA model files
-├── static/                # Plot images for web app
-├── templates/             # HTML templates for Flask
-├── requirements.txt       # Python dependencies
-└── README.md              # You're here!
-
-````
-
-## 🔧 Setup Instructions
-
-1. **Clone the repository**  
+## Setup Instructions
+1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/churn-arima.git
+git clone https://github.com/Kolli-VenkataRushita/churn-forecasting.git
 cd churn-arima
 ````
 
-2. **Create and activate a virtual environment**
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Run the Flask dashboard**
+3. Run the Flask app:
 
 ```bash
 cd app
 python app.py
 ```
 
-> Visit `http://127.0.0.1:5000` to view the churn forecast dashboard
+The dashboard will be available at: `http://127.0.0.1:5000`
 
-## 👩‍💻 Contributors
+## Project Structure
 
-* [K. Venkata Rushita](https://github.com/Kolli-VenkataRushita)
+```
+churn-arima/
+├── app/                # Flask app files
+├── data/               # Dataset files
+├── notebooks/          # Exploratory and modeling notebooks
+├── static/             # Plots/images
+├── templates/          # HTML templates for dashboard
+├── models/             # Saved ARIMA models
+├── requirements.txt
+└── README.md
+```
+
+## Contributors
+
+* K. Venkata Rushita
 * M. Jaya Sri
 * M. Saahithi
 * N. Renuka Devi
 * Guide: Mr. Y. Ramu
-
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-📬 **For inquiries or collaboration, feel free to reach out!**
-
-```
-
----
-
-Would you like a downloadable `.md` file or help linking this to a real GitHub repo?
-```
